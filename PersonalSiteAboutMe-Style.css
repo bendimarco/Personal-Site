@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 44px;
+}
+
+.TitleLogo {
+  float: left;
+  padding-left: 80px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navigation{
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: right;
+  list-style: none;
+  padding: 25px 40px 25px 0;
+}
+
+.navigation > li {
+  display: inline-block;
+  font-size: 18px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+
+.navigation > li > a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation > li > a:hover {
+  color: #656565;
+}
+
+.banner {
+  width: 100%;
+  display: block;
+}
+
+.banner > BannerImage {
+  width: cover;
+  display: block;
+}
+
+.AboutMePage{
+  padding-top: 20px;
+}
+
+.description {
+  float: right;
+  font-size: 24px;
+  padding-right: 15%;
+  padding-left: 5%;
+  padding-bottom: 5%
+}
+
+.picture{
+  padding-right: 5%;
+  padding-left: 15%;
+  height: auto;
+  display: block;
+}

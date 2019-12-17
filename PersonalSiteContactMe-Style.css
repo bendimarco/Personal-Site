@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html {
+  background: linear-gradient(rgba(26,26,26,0.55), rgba(26,26,26,0.55)),url("images/darkaurora.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body{
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.ContactMeForm {
+  margin-top: 60px;
+  color: #FFFFFF;
+}
+
+.ContactMeForm > h1 {
+  font-size: 70px;
+}
+
+.ContactMeForm > a {
+  color: #FFFFFF;
+  text-decoration: none;
+  border: #FFFFFF 1px solid;
+  border-radius: 10px;
+  padding: 12px 80px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.ContactMeForm > a:hover {
+  color: #FFFFFF;
+  opacity: 70%;
+}
+
+form {
+  margin-top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.FormItem{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 8px;
+  color: #FFFFFF;
+}
+
+::placeholder {
+  color: #E1E1E1;
+}
+
+.TitleLogo {
+  float: left;
+  padding-left: 80px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navigation{
+  background-color: transparent;
+  color: #FFFFFF;
+  text-align: right;
+  list-style: none;
+  padding: 25px 40px 25px 0;
+}
+
+.navigation > li {
+  display: inline-block;
+  font-size: 18px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+
+.navigation > li > a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navigation > li > a:hover {
+  color: #FFFFFF;
+  opacity: 70%;
+}

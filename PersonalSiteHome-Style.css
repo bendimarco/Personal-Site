@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html {
+  background: linear-gradient(rgba(2,2,2,0.35), rgba(2,2,2,0.35)), url("images/aurora.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body{
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.home {
+  padding-top: 160px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 44px;
+}
+
+.TitleLogo {
+  float: left;
+  padding-left: 80px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navigation{
+  background-color: transparent;
+  color: #FFFFFF;
+  text-align: right;
+  list-style: none;
+  padding: 25px 40px 25px 0;
+}
+
+.navigation > li {
+  display: inline-block;
+  font-size: 18px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+
+.navigation > li > a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navigation > li > a:hover {
+  color: #FFFFFF;
+  opacity: 70%;
+}
+
+.button {
+  background-color: transparent;
+  color: #FFFFFF;
+  text-align: center;
+  list-style: none;
+  padding-top: 70px;
+  font-size: 26px;
+}
+
+.button > li > a {
+  color: #FFFFFF;
+  text-decoration: none;
+  border: #FFFFFF 2px solid;
+  border-radius: 10px;
+  padding: 15px 30px;
+}
+
+.button > li > a:hover {
+  color: #FFFFFF;
+  opacity: 60%;
+}
