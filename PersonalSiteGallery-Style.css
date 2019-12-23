@@ -61,21 +61,21 @@ body{
   opacity: 70%;
 }
 
-.slide {
-  display: none
-}
-
-img {
-  vertical-align: middle;
-}
-
-.slideshow-container {
+.Slideshow {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-.last, .next {
+.Slideshow > img {
+  vertical-align: middle;
+}
+
+.slide {
+  display: none
+}
+
+.LastButton, .NextButton {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -90,12 +90,12 @@ img {
   user-select: none;
 }
 
-.next {
+.NextButton {
   right: 0;
   border-radius: 5px 0 0 5px;
 }
 
-.last:hover, .next:hover {
+.LastButton:hover, .NextButton:hover {
   background-color: rgba(0,0,0,0.7);
 }
 
@@ -110,7 +110,7 @@ img {
   transition: background-color 0.4s ease;
 }
 
-.active, .clicker:hover {
+.current, .clicker:hover {
   background-color: #595959;
 }
 

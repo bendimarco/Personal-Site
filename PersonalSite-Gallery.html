@@ -20,7 +20,7 @@
     <li><a href="PersonalSite-ContactMe.html">Contact Me</a></li>
   </ul>
 
-<div class="slideshow-container">
+<div class="Slideshow">
 
   <img src="images\SlideshowPics\train.jpg" style="width:100%" class="slide transition">
   <img src="images\SlideshowPics\cave.jpg" style="width:100%" class="slide transition">
@@ -48,71 +48,71 @@
   <img src="images\SlideshowPics\lightbulb.jpg" style="width:100%" class="slide transition">
   <img src="images\SlideshowPics\goat.jpg" style="width:100%" class="slide transition">
 
-<a class="last" onclick="nextSlide(-1)">&#10094;</a>
-<a class="next" onclick="nextSlide(1)">&#10095;</a>
+<a class="LastButton" onclick="nextSlide(-1)">&#10094;</a>
+<a class="NextButton" onclick="nextSlide(1)">&#10095;</a>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="clicker" onclick="onSlide(1)"></span>
-  <span class="clicker" onclick="onSlide(2)"></span>
-  <span class="clicker" onclick="onSlide(3)"></span>
-  <span class="clicker" onclick="onSlide(4)"></span>
-  <span class="clicker" onclick="onSlide(5)"></span>
-  <span class="clicker" onclick="onSlide(6)"></span>
-  <span class="clicker" onclick="onSlide(7)"></span>
-  <span class="clicker" onclick="onSlide(8)"></span>
-  <span class="clicker" onclick="onSlide(9)"></span>
-  <span class="clicker" onclick="onSlide(10)"></span>
-  <span class="clicker" onclick="onSlide(11)"></span>
-  <span class="clicker" onclick="onSlide(12)"></span>
-  <span class="clicker" onclick="onSlide(13)"></span>
-  <span class="clicker" onclick="onSlide(14)"></span>
-  <span class="clicker" onclick="onSlide(15)"></span>
-  <span class="clicker" onclick="onSlide(16)"></span>
-  <span class="clicker" onclick="onSlide(17)"></span>
-  <span class="clicker" onclick="onSlide(18)"></span>
-  <span class="clicker" onclick="onSlide(19)"></span>
-  <span class="clicker" onclick="onSlide(20)"></span>
-  <span class="clicker" onclick="onSlide(21)"></span>
-  <span class="clicker" onclick="onSlide(22)"></span>
-  <span class="clicker" onclick="onSlide(23)"></span>
-  <span class="clicker" onclick="onSlide(24)"></span>
-  <span class="clicker" onclick="onSlide(25)"></span>
+  <span class="clicker" onclick="displaySlide(1)"></span>
+  <span class="clicker" onclick="displaySlide(2)"></span>
+  <span class="clicker" onclick="displaySlide(3)"></span>
+  <span class="clicker" onclick="displaySlide(4)"></span>
+  <span class="clicker" onclick="displaySlide(5)"></span>
+  <span class="clicker" onclick="displaySlide(6)"></span>
+  <span class="clicker" onclick="displaySlide(7)"></span>
+  <span class="clicker" onclick="displaySlide(8)"></span>
+  <span class="clicker" onclick="displaySlide(9)"></span>
+  <span class="clicker" onclick="displaySlide(10)"></span>
+  <span class="clicker" onclick="displaySlide(11)"></span>
+  <span class="clicker" onclick="displaySlide(12)"></span>
+  <span class="clicker" onclick="displaySlide(13)"></span>
+  <span class="clicker" onclick="displaySlide(14)"></span>
+  <span class="clicker" onclick="displaySlide(15)"></span>
+  <span class="clicker" onclick="displaySlide(16)"></span>
+  <span class="clicker" onclick="displaySlide(17)"></span>
+  <span class="clicker" onclick="displaySlide(18)"></span>
+  <span class="clicker" onclick="displaySlide(19)"></span>
+  <span class="clicker" onclick="displaySlide(20)"></span>
+  <span class="clicker" onclick="displaySlide(21)"></span>
+  <span class="clicker" onclick="displaySlide(22)"></span>
+  <span class="clicker" onclick="displaySlide(23)"></span>
+  <span class="clicker" onclick="displaySlide(24)"></span>
+  <span class="clicker" onclick="displaySlide(25)"></span>
 
 </div>
 
 <script>
 var slideIndex = 1;
-displays(slideIndex);
+display(slideIndex);
 
-function onSlide(n) {
-  displays(slideIndex = n);
+function displaySlide(num) {
+  display(slideIndex = num);
 }
 
-function nextSlide(n) {
-  displays(slideIndex += n);
+function nextSlide(num) {
+  display(slideIndex += num);
 }
 
-function displays(n) {
-  var i;
+function display(num) {
   var slideNum = document.getElementsByClassName("slide");
-  var clickers = document.getElementsByClassName("clicker");
-  if (n > slideNum.length) {
+  if (num > slideNum.length) {
     slideIndex = 1
   }
-  if (n < 1) {
+  if (num < 1) {
     slideIndex = slideNum.length
   }
+  var i;
   for (i = 0; i < slideNum.length; i++) {
       slideNum[i].style.display = "none";
   }
+  var clickers = document.getElementsByClassName("clicker");
   for (i = 0; i < clickers.length; i++) {
-      clickers[i].className = clickers[i].className.replace(" active", "");
+      clickers[i].className = clickers[i].className.replace(" current", "");
   }
   slideNum[slideIndex-1].style.display = "block";
-  clickers[slideIndex-1].className += " active";
+  clickers[slideIndex-1].className += " current";
 }
 </script>
 
