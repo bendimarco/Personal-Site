@@ -30,7 +30,7 @@ body{
   border-radius: 10px;
   padding: 12px 80px;
   width: 100%;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .ContactMeForm > a:hover {
@@ -49,7 +49,7 @@ form {
   border: none;
   outline: none;
   border-bottom: 2px solid grey;
-  font-size: 26px;
+  font-size: 22px;
   padding-top: 30px;
   padding-bottom: 8px;
   color: #effffb;

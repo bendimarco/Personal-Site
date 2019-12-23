@@ -1,29 +1,120 @@
 <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benjamin DiMarco</title>
+<link rel="stylesheet" type="text/css" href="PersonalSiteGallery-Style.css">
+<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
 
-<html lang="en" dir="ltr">
-  <head>
-    <title>Benjamin DiMarco</title>
-    <link rel="stylesheet" type="text/css" href="PersonalSiteGallery-Style.css">
-    <link rel="icon" href="images\favicon.ico">
-  </head>
+  <ul class="navigation">
 
-  <body>
-    <ul class="navigation">
+    <div class="TitleLogo">
+      <a href="PersonalSite-Home.html">Benjamin DiMarco</a>
+    </div>
 
-      <div class="TitleLogo">
-        <a href="PersonalSite-Home.html">Benjamin DiMarco</a>
-      </div>
+    <li><a href="PersonalSite-AboutMe.html">About Me</a></li>
+    <li><a href="#">Experience</a></li>
+    <li><a href="PersonalSite-Gallery.html">Gallery</a></li>
+    <li><a href="PersonalSite-ContactMe.html">Contact Me</a></li>
+  </ul>
 
-      <li><a href="PersonalSite-AboutMe.html">About Me</a></li>
-      <li><a href="#">Experience</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="PersonalSite-ContactMe.html">Contact Me</a></li>
-      </ul>
+<div class="slideshow-container">
 
-      <div class="GitHub">
-        <div class="GitHubImage">
-          <a href="https://github.com/bendimarco"><img src="images\GitHubMark.png"></a>
-        </div>
-      </div>
-  </body>
+  <img src="images\SlideshowPics\train.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\cave.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\mountainside.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\painter.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\bay.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\dog.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\seasidetrucks.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\band.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\alley.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\truck.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\parking.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\venicetaxi.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\flourecentsign.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\crater.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\stonestack.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\berries.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\oceanside.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\telescope.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\germanman.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\yellowflowers.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\oceanariel.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\bobber.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\leaves.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\lightbulb.jpg" style="width:100%" class="slide transition">
+  <img src="images\SlideshowPics\goat.jpg" style="width:100%" class="slide transition">
+
+<a class="last" onclick="nextSlide(-1)">&#10094;</a>
+<a class="next" onclick="nextSlide(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="clicker" onclick="onSlide(1)"></span>
+  <span class="clicker" onclick="onSlide(2)"></span>
+  <span class="clicker" onclick="onSlide(3)"></span>
+  <span class="clicker" onclick="onSlide(4)"></span>
+  <span class="clicker" onclick="onSlide(5)"></span>
+  <span class="clicker" onclick="onSlide(6)"></span>
+  <span class="clicker" onclick="onSlide(7)"></span>
+  <span class="clicker" onclick="onSlide(8)"></span>
+  <span class="clicker" onclick="onSlide(9)"></span>
+  <span class="clicker" onclick="onSlide(10)"></span>
+  <span class="clicker" onclick="onSlide(11)"></span>
+  <span class="clicker" onclick="onSlide(12)"></span>
+  <span class="clicker" onclick="onSlide(13)"></span>
+  <span class="clicker" onclick="onSlide(14)"></span>
+  <span class="clicker" onclick="onSlide(15)"></span>
+  <span class="clicker" onclick="onSlide(16)"></span>
+  <span class="clicker" onclick="onSlide(17)"></span>
+  <span class="clicker" onclick="onSlide(18)"></span>
+  <span class="clicker" onclick="onSlide(19)"></span>
+  <span class="clicker" onclick="onSlide(20)"></span>
+  <span class="clicker" onclick="onSlide(21)"></span>
+  <span class="clicker" onclick="onSlide(22)"></span>
+  <span class="clicker" onclick="onSlide(23)"></span>
+  <span class="clicker" onclick="onSlide(24)"></span>
+  <span class="clicker" onclick="onSlide(25)"></span>
+
+</div>
+
+<script>
+var slideIndex = 1;
+displays(slideIndex);
+
+function onSlide(n) {
+  displays(slideIndex = n);
+}
+
+function nextSlide(n) {
+  displays(slideIndex += n);
+}
+
+function displays(n) {
+  var i;
+  var slideNum = document.getElementsByClassName("slide");
+  var clickers = document.getElementsByClassName("clicker");
+  if (n > slideNum.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slideNum.length
+  }
+  for (i = 0; i < slideNum.length; i++) {
+      slideNum[i].style.display = "none";
+  }
+  for (i = 0; i < clickers.length; i++) {
+      clickers[i].className = clickers[i].className.replace(" active", "");
+  }
+  slideNum[slideIndex-1].style.display = "block";
+  clickers[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
 </html>

@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap');
 
+* {
+  box-sizing: border-box
+
+}
+
 body{
   margin: 0;
   padding-top: 0px;
@@ -14,10 +19,10 @@ body{
 .TitleLogo {
   float: left;
   padding-left: 80px;
+  color: #effffb;
   font-weight: bold;
   font-size: 36px;
   font-family: 'Nothing You Could Do', cursive;
-  background-color: #1a1a1a;
 }
 
 .TitleLogo > a {
@@ -30,11 +35,12 @@ body{
 }
 
 .navigation{
-  color: #1a1a1a;
+  background-color: transparent;
+  color: #effffb;
   text-align: right;
   list-style: none;
   padding: 25px 40px 25px 0;
-  background-color: #1a1a1a;
+  padding-bottom: 40px;
 }
 
 .navigation > li {
@@ -51,18 +57,74 @@ body{
 }
 
 .navigation > li > a:hover {
+  color: #effffb;
   opacity: 70%;
 }
 
-.GitHub {
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
+.slide {
+  display: none
 }
 
-.GitHubImage > a:hover {
-  opacity: 70%;
+img {
+  vertical-align: middle;
+}
 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.last, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.1s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.last:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.clicker {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #BBBBBB;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.active, .clicker:hover {
+  background-color: #595959;
+}
+
+.transition {
+  animation-name: transition;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes transition {
+  from {opacity: .6}
+  to {opacity: 1}
+}
+
+@keyframes transition {
+  from {opacity: .6}
+  to {opacity: 1}
 }
