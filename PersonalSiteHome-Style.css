@@ -36,6 +36,7 @@ body{
 
 .TitleLogo > a:hover {
   opacity: 70%;
+  transition: .4s;
 }
 
 .navigation{
@@ -43,7 +44,7 @@ body{
   color: #effffb;
   text-align: right;
   list-style: none;
-  padding: 25px 40px 25px 0;
+  padding: 25px 40px 70px 0;
 }
 
 .navigation > li {
@@ -62,6 +63,7 @@ body{
 .navigation > li > a:hover {
   color: #effffb;
   opacity: 70%;
+  transition: .4s;
 }
 
 .button {
@@ -69,7 +71,7 @@ body{
   color: #effffb;
   text-align: center;
   list-style: none;
-  padding-top: 70px;
+  padding-top: 60px;
   font-size: 34px;
 }
 
@@ -84,4 +86,5 @@ body{
 .button > li > a:hover {
   color: #effffb;
   opacity: 60%;
+  transition: .4s;
 }

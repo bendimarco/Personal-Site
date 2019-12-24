@@ -23,18 +23,21 @@ body{
   font-size: 70px;
 }
 
-.ContactMeForm > a {
+.ContactMeForm > input {
   color: #effffb;
   text-decoration: none;
   border: #effffb 2px solid;
   border-radius: 10px;
-  padding: 12px 80px;
-  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  width: 12%;
   font-size: 22px;
+  background-color: transparent;
 }
 
-.ContactMeForm > a:hover {
-  opacity: 70%;
+.ContactMeForm > input:hover {
+  opacity: 50%;
+  transition: .4s;
 }
 
 form {
@@ -74,7 +77,8 @@ form {
 }
 
 .TitleLogo > a:hover {
-  opacity: 70%;
+  opacity: 50%;
+  transition: .4s;
 }
 
 .navigation{
@@ -100,5 +104,6 @@ form {
 
 .navigation > li > a:hover {
   color: #effffb;
-  opacity: 70%;
+  opacity: 50%;
+  transition: .4s;
 }

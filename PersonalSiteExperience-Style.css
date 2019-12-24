@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap');
+
+body{
+  margin: 0;
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background-color: #1a1a1a;
+  height: 3000px;
+}
+
+.TitleLogo {
+  float: left;
+  padding-left: 80px;
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Nothing You Could Do', cursive;
+  background-color: #1a1a1a;
+}
+
+.TitleLogo > a {
+  text-decoration: none;
+  color: #effffb;
+}
+
+.TitleLogo > a:hover {
+  opacity: 70%;
+  transition: .4s;
+}
+
+.navigation{
+  color: #1a1a1a;
+  text-align: right;
+  list-style: none;
+  padding: 25px 40px 25px 0;
+  background-color: #1a1a1a;
+}
+
+.navigation > li {
+  display: inline-block;
+  font-size: 22px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+
+.navigation > li > a {
+  color: #effffb;
+  text-decoration: none;
+}
+
+.navigation > li > a:hover {
+  opacity: 70%;
+  transition: .4s;
+}
+
+.Coursework {
+  margin-top: 40px;
+  height: 760px;
+  width: 100%;
+  color: #effffb;
+}
+
+.CourseworkTitle > a {
+    border: 5px solid #50d890;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #50d890;
+    padding: 12px 25px;
+    color: #1a1a1a;
+    font-weight: bold;
+    border-width: 2px;
+    margin-right: 36%;
+    float: left;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.CourseworkTitle > a:hover {
+    color: #50d890;
+    background-color: #1a1a1a;
+    border-color: #50d890;
+    transition: .4s;
+}
+
+.CourseworkContent {
+  padding-top: 5%;
+  padding-left: 35%;
+  padding-right: 10%;
+  color: #effffb;
+  font-size: 18px;
+}
+
+.CourseworkContent > h2, .ExtracurricularContent > h2 {
+  padding-top: 40px;
+}
+
+.Extracurricular {
+  height: 894px;
+  background-color: #50d890;
+  width: 100%;
+  color: #1a1a1a;
+  margin-bottom: -16px;
+}
+
+.ExtracurricularContent {
+  padding-top: 5%;
+  padding-left: 35%;
+  padding-right: 10%;
+  color: #1a1a1a;
+  font-size: 18px;
+}
+
+.Skill {
+  height: 880px;
+  background-color: #effffb;
+  width: 100%;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+
+.CourseworkTitle, .ExtracurricularTitle{
+  width: 30%;
+  float: left;
+  font-size: 28px;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+.SkillTitle {
+  width: 26%;
+  float: left;
+  font-size: 28px;
+  padding-left: 60px;
+  padding-top: 80px;
+}
+
+.SkillTitle > h1 {
+  padding-bottom: 80px;
+}
+
+.SkillContent {
+  padding-top: 5%;
+  padding-left: 28%;
+  padding-right: 10%;
+  color: #1a1a1a;
+  font-size: 18px;
+}
+
+.SkillContent > ul {
+  list-style-type: none;
+}
+
+.SkillsAndAbilities {
+  padding-top: 10px;
+  padding-bottom: 96px;
+}
+
+.SkillsAndAbilities > h3, .AwardsAndHonors > h3 {
+  padding-bottom: 10px;
+}
+
+.SkillsAndAbilities > ul, .Education > ul, .AwardsAndHonors > ul {
+  list-style-type: disc;
+}
+
+.AwardsAndHonors {
+  padding-bottom: 134px;
+}
+
+.EndButtons {
+  padding-top: 40px;
+}
+
+.EndButtons > a {
+  border: 5px solid #50d890;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #50d890;
+  padding: 10px 50px;
+  color: #1a1a1a;
+  font-weight: bold;
+  border-width: 2px;
+  font-size: 28px;
+}
+
+.GalleryButton {
+  margin-left: 20%;
+  float: left;
+}
+
+.ContactMeButton{
+  margin-right: 16%;
+  float: right;
+}
+
+.EndButtons > a:hover {
+  color: #50d890;
+  background-color: #1a1a1a;
+  border-color: #50d890;
+  transition: .4s;
+}
+
+.GithubButton {
+  padding-top: 20px;
+}
+
+.GithubButton > a {
+  margin-left: 46.5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+
+.GithubButton > a:hover {
+  opacity: 50%;
+  transition: .4s;
+}

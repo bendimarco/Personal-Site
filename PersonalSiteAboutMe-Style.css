@@ -4,7 +4,6 @@
 
 body{
   margin: 0;
-  padding-top: 0px;
   padding-bottom: 10px;
   font-family: 'Lato', sans-serif;
   width: 100%;
@@ -32,7 +31,8 @@ h1 {
 }
 
 .TitleLogo > a:hover {
-  opacity: 70%;
+  opacity: 50%;
+  transition: .4s;
 }
 
 .navigation{
@@ -57,7 +57,8 @@ h1 {
 }
 
 .navigation > li > a:hover {
-  opacity: 70%;
+  opacity: 50%;
+  transition: .4s;
 }
 
 .AboutMePage{
@@ -141,4 +142,5 @@ h1 {
   color: #50d890;
   background-color: #1a1a1a;
   border-color: #50d890;
+  transition: .4s;
 }
