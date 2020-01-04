@@ -83,7 +83,7 @@ h1:after {
 }
 
 .Slideshow{
-  max-width: 840px;
+  max-width: 700px;
   position: relative;
   margin: auto auto auto 6%;
   float:left;
@@ -157,7 +157,7 @@ h1:after {
 }
 
 .contactContent {
-  padding-top: 30%;
+  padding-top: 26%;
   margin-right: 10%;
 }
 
@@ -168,24 +168,41 @@ h1:after {
   margin-right: 5%;
 }
 
-.contactContent > a {
+.ExperienceButton > a, .ContactMeButton > a {
   border: 5px solid #50d890;
   text-decoration: none;
   border-radius: 10px;
   background-color: #50d890;
-  padding: 10px 50px;
+  padding: 10px 30px;
   color: #1a1a1a;
   font-weight: bold;
   border-width: 2px;
-  margin-right: 36%;
   float: right;
-  font-size: 28px;
-  margin-top: 100px;
+  font-size: 25px;
+  margin-top: 80px;
 }
 
-.contactContent > a:hover {
+.ExperienceButton > a {
+  margin-right: 30%;
+  }
+
+.ContactMeButton > a {
+  margin-right: 20%;
+}
+
+.ExperienceButton > a:hover, .ContactMeButton > a:hover {
   color: #50d890;
   background-color: #1a1a1a;
   border-color: #50d890;
   transition: .4s;
+}
+
+.ExperienceButton {
+  width: 50%;
+  float: left;
+}
+
+.ContactMeButton{
+  width: 50%;
+  float: right;
 }
